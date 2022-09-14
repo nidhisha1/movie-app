@@ -7,7 +7,7 @@ const LastMovie = (props) => {
 	return (
 		<div>
 			{!loading &&
-				<div className='image-container d-flex justify-content-start m-3'>
+				<div className='d-flex justify-content-start m-3'>
 					{props.lastMovie.title} / {props.lastMovie.releaseDate}
 					{console.log(props)}
 				</div>

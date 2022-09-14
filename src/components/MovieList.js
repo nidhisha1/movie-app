@@ -4,13 +4,19 @@ const MovieList = (props) => {
 	//const FavouriteComponent = props.favouriteComponent;
 
 	return (
-		<div>
+		<>
 			{props.movies.map((movie, index) => (
-				<div className='image-container d-flex justify-content-start m-3' key={index}>
-						{movie.title}
+				<div className='movie-container d-flex align-items-center justify-content-center m-3' key={index}>
+					<div className='m-8'>	
+						<h5 className='title'>{movie.title}</h5>
+						<div className='movie-details'>
+							<div>Directed By: {movie.director}</div>
+							<div>Release Date: {movie.release_date}</div>
+						</div>
+					</div>				
 				</div>
 			))}
-		</div>
+		</>
 	);
 };
 
